@@ -24,5 +24,18 @@ program ini dibuat menggunakan bahasa python, dengan fitur yang meliputi:
   
   print("selesai")
 ```
-## input program
-![output]
+# Output Program
+```'
+Masukkan nilai N: 3
+data ke-1 => 0.13874598480703348
+data ke-2 => 0.44327004245785784
+data ke-3 => 0.4887813949571461
+Selesai
+
+````
+
+# Cara Kerja Program
+- Input: Program meminta pengguna untuk memasukkan nilai N, yaitu jumlah angka yang lebih kecil dari 0.5 yang ingin dicetak.
+- Perulangan: Program menghasilkan angka acak antara 0 dan 1 menggunakan random().
+- Pengecekan: Jika angka yang dihasilkan kurang dari 0.5, angka tersebut dicetak dan dihitung.
+- Berhenti: Program terus menghasilkan angka acak hingga jumlah angka yang lebih kecil dari 0.5 mencapai N, lalu mencetak "Selesai" dan berhenti.
