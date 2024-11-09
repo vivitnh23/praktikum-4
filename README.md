@@ -9,19 +9,20 @@ program ini dibuat menggunakan bahasa python, dengan fitur yang meliputi:
 - Menghasilkan bilangan acak antara 0 dan 1, dan hanya menampilkan bilangan yang lebih kecil dari 0.5.
 - Menampilkan urutan (indeks) dari setiap bilangan acak yang valid.
 
-  ## Output program
+  ## Kode Program 
   ```python
   from random import random
-  
-n = int(input("Masukkan nilai N: "))
-count = 0
 
-while count < n:
-    num = random()
-    if num < 0.5:
+  n = int(input("masukan nilai N: "))
+  count = 0
+
+  while count < n:
+      num = random()
+      if num < 0.5:
         count += 1
         print(f"data ke-{count} => {num}")
-
-print("Selesai")
+  
+  print("selesai")
 ```
 ## input program
+![output]
