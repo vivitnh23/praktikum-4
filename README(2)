@@ -1,9 +1,9 @@
-## Deskripsi perhitungan laba 
+## Deskripsi Program 
 Program Python ini menghitung laba yang diperoleh setiap bulan berdasarkan modal awal tertentu. Laba yang dihitung bervariasi setiap bulan,
 dengan persentase laba yang berbeda-beda di setiap periode.Program ini menunjukkan bagaimana laba berkembang selama 8 
 bulan dengan skema persentase yang ditentukan untuk setiap bulan.
 
-## Fitur yang digunakan
+## Fitur Program 
 - Modal Awal: Menggunakan modal awal sebesar 100 juta.
 - Perhitungan Laba: Laba dihitung berdasarkan persentase tertentu yang berbeda setiap bulan.
 - Laba per Bulan:
@@ -13,3 +13,27 @@ Bulan 5 dan 6: Laba 5% dari modal awal.
 Bulan 7: Laba 5% dari modal awal.
 Bulan 8: Laba 3% dari modal awal.
 
+## Kode Program 
+```python
+modal_awal = 100000000
+total_laba = 0
+
+print("Laba per bulan:")
+
+for bulan in range(1, 9):
+    if bulan == 1 or bulan == 2:
+        laba = 0  # Bulan pertama dan kedua belum ada laba
+    elif bulan == 3 or bulan == 4:
+        laba = modal_awal * 0.01  # Bulan ketiga dan keempat laba 1%
+    elif bulan == 5 or bulan == 6:
+        laba = modal_awal * 0.05  # Bulan kelima dan keenam laba 5%
+    elif bulan == 7:
+        laba = modal_awal * 0.05  # Bulan ketujuh laba tetap 5%
+    elif bulan == 8:
+        laba = modal_awal * 0.03  # Bulan kedelapan laba turun menjadi 3%
+    
+    print(f"Laba bulan ke-{bulan} sebesar: {laba}")
+    total_laba += laba  # Menambahkan laba bulanan ke total laba
+
+print(f"Total laba adalah: {total_laba}")
+```
