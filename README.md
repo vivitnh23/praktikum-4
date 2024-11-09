@@ -12,12 +12,10 @@ program ini dibuat menggunakan bahasa python, dengan fitur yang meliputi:
   ## Output program
   ```python
   from random import random
-
-#Meminta input jumlah bilangan acak yang lebih kecil dari 0.5
+  
 n = int(input("Masukkan nilai N: "))
 count = 0
 
-#Loop untuk menghasilkan dan menampilkan bilangan acak yang kurang dari 0.5
 while count < n:
     num = random()
     if num < 0.5:
