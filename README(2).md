@@ -37,3 +37,29 @@ for bulan in range(1, 9):
 
 print(f"Total laba adalah: {total_laba}")
 ```
+
+# Output Program 
+````
+Laba per bulan:
+Laba bulan ke-1 sebesar: 0
+Laba bulan ke-2 sebesar: 0
+Laba bulan ke-3 sebesar: 1000000.0
+Laba bulan ke-4 sebesar: 1000000.0
+Laba bulan ke-5 sebesar: 5000000.0
+Laba bulan ke-6 sebesar: 5000000.0
+Laba bulan ke-7 sebesar: 5000000.0
+Laba bulan ke-8 sebesar: 3000000.0
+Total laba adalah: 20000000.0
+````
+
+# Cara Kerja Program 
+- Inisialisasi Modal dan Laba: Program dimulai dengan modal awal sebesar 100 juta dan total laba 0.
+- Perulangan Bulanan: Program menghitung laba setiap bulan selama 8 bulan dengan persentase laba yang berbeda setiap bulan:
+Bulan 1 dan 2: Tidak ada laba.
+Bulan 3 dan 4: Laba 1% dari modal.
+Bulan 5 dan 6: Laba 5% dari modal.
+Bulan 7: Laba 5% dari modal.
+Bulan 8: Laba 3% dari modal.
+Menampilkan Laba per Bulan: Program mencetak laba setiap bulan dan menambahkannya ke total laba.
+
+Total Laba: Setelah perulangan selesai, program menampilkan total laba yang terkumpul selama 8 bulan.
